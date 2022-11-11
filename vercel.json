@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/**/*.go": {
+      "runtime": "@vercel/go"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/test", "destination": "/vercel/output/server/entries/endpoints/api/test/_server.ts.js" }
+  ]
+}
